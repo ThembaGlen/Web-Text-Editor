@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="/Web-Text-Editor/style.css">
     </head>
     <body>
-        <section class="navwrap">
-            <header>
+        <section >
+            <header class="navwrap">
                 <div class="logo">
                     <div class="logo2">
                         <span></span>
@@ -23,10 +23,10 @@
                 </div>
                 <nav class="navbar">
                     <ul class="link-list">
-                        <li><button type="button"><a href="#">Home</a></button></li>
-                        <li><button type="button"><a href="#">Code</a></button></li>
-                        <li><button type="button"><a href="#">About</a></button></li>
-                        <li><button type="button"><a href="#">Contact</a></button></li>
+                        <li><button type="button" class="btn"><a href="#" class="link">Home</a></button></li>
+                        <li><button type="button" class="btn"><a href="#" class="link">Code</a></button></li>
+                        <li><button type="button" class="btn"><a href="#" class="link">About</a></button></li>
+                        <li><button type="button" class="btn"><a href="#" class="link">Contact</a></button></li>
                     </ul>
                 </nav>
             </header>
@@ -38,23 +38,23 @@
 
                     <section id="input">
                       
-                        <label class="html-block">HTML Code:<br>
-                            <textarea name="source" id="source" cols="60" rows="20" >                     
+                        <label id="lbl" class="html-block">HTML Code:<br>
+                            <textarea name="source-html" id="source" cols="60" rows="20" >                     
                             </textarea>
                         </label>                           
                       
-                        <label class="css-block">CSS Code:<br>
-                            <textarea name="source" id="source" cols="60" rows="20" >          
+                        <label id="lbl" class="css-block">CSS Code:<br>
+                            <textarea name="source2" id="source" cols="60" rows="20" >          
                             </textarea>
                         </label>    
                        
-                        <label class="js-block">JavaScript Code:<br>
-                            <textarea name="source" id="source" cols="60" rows="20" >                    
+                        <label id="lbl" class="js-block">JavaScript Code:<br>
+                            <textarea name="source3" id="source" cols="60" rows="20" >                    
                             </textarea>
                         </label>    
                    
                     </section>
-                    <label class="output-block">Code Output:</label>
+                    <label id="lblOut">Code Output:</label>
                    <section id="output">
                   
                     </section>
