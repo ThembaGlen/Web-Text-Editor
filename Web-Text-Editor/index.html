@@ -10,12 +10,15 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/Web-Text-Editor/style.css">
     </head>
     <body>
         <section class="navwrap">
             <header>
                 <div class="logo">
+                    <div class="logo2">
+                        <span></span>
+                    </div>
                     <span></span>
                 </div>
                 <nav class="navbar">
@@ -32,19 +35,32 @@
 
             <section class="build">
                 <form action="">
-                   <label for="search">Search</label>
-                    <input type="text">
-                    <button type="button" id="search">Search</button>
-                    <section id="input">
-                        <label>code area</label>
-                        <textarea name="source" id="source" cols="30" rows="10"></textarea>    
-                    </section>
-                   <section id="output">
 
+                    <section id="input">
+                      
+                        <label class="html-block">HTML Code:<br>
+                            <textarea name="source" id="source" cols="60" rows="20" >                     
+                            </textarea>
+                        </label>                           
+                      
+                        <label class="css-block">CSS Code:<br>
+                            <textarea name="source" id="source" cols="60" rows="20" >          
+                            </textarea>
+                        </label>    
+                       
+                        <label class="js-block">JavaScript Code:<br>
+                            <textarea name="source" id="source" cols="60" rows="20" >                    
+                            </textarea>
+                        </label>    
+                   
+                    </section>
+                    <label class="output-block">Code Output:</label>
+                   <section id="output">
+                  
                     </section>
                 </form>
             </section>
         </main>
-        <script src="/main.js" async defer></script>
+        <script src="/Web-Text-Editor/main.js" async defer></script>
     </body>
 </html>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital@1&display=swap');
 html{
     box-sizing: border-box;
 }
@@ -7,48 +8,98 @@ html{
     margin: 0;
 }
 header{
-    background: linear-gradient(rgba(48, 48, 48, 0.973), rgb(0, 0, 0));
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(4,3,60,1) 29%, rgba(211,0,255,1) 52%, rgb(253, 117, 240) 78%);
     display: flex;
     justify-content: flex-end;
     align-items:center;
+ 
 }
 .logo{
     margin: 5px auto 5px 5px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
     border-radius: 10px 0 10px 0;
-    background: linear-gradient(rgba(109, 68, 255, 0.973), rgb(197, 33, 230));
+    background: linear-gradient(rgba(255, 0, 0, 0.973), rgb(223, 62, 255));
+    transition: all 1s;
+}
+.logo2{
+    margin: 0px auto -1px 2px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(223, 62, 255, 0));
+    transition: all 1s;
+}
+.logo2:hover{
+    margin: 0px auto -1px 2px;
+    width: 45px;
+    height: 45px;
+    border-radius: 0 100px 0 100px;
+    background: linear-gradient(rgba(255, 100, 255, 0.973), rgb(255, 255, 255));
     transition: all 1s;
 }
 .logo:hover{
     margin: 5px auto 5px 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px 0 50px 0;
-    background: linear-gradient(rgba(201, 18, 18, 0.973), rgb(216, 20, 255));
-    transition: all 1s;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px 0 100px 0;
+    background: linear-gradient(rgba(255, 100, 255, 0.973), rgb(255, 255, 255));
+    transition: all .55s;
 }
 li, a{
     font-family:Poppins;
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: rgb(233, 22, 252);
     display: inline;
 }
-button{
+header button{
     border-radius: 20px;
-    padding: 4px 20px;
+    padding: 2px 20px;
     margin-right: 20px;
-    border: transparent;
+    border: 3px solid pink;
     cursor: pointer;
-    background:linear-gradient(rgb(255, 0, 64), rgb(247, 74, 218));
+    background:linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     transition: all .2s;
 }
-button:hover{
+header button:hover{
     border-radius: 20px;
-    padding: 6px 22px;
+    padding: 4px 24px;
     margin-right: 20px;
-    border: transparent;
-    background:linear-gradient(rgb(255, 0, 234), rgb(0, 255, 221));
+    border: 3px solid pink;
+    cursor: pointer;
+    background:linear-gradient(rgb(255, 121, 244), rgb(231, 223, 149));
     transition: all .2s;
+}
+ textarea{
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    font-family: Poppins;
+    background: rgb(1, 1, 29);
+    color: white;
+}
+#input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background:linear-gradient(rgb(255, 121, 244), rgb(231, 223, 149));
+
+}
+label{
+    font-family: Prompt;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 20px;
+    color:rgb(3, 1, 29);
+}
+.output-block{
+    display: block;
+    margin-left: 0px;
+    background: rgb(231, 223, 149);
+}
+#output{
+    height: 90vh;
+    border: .5px solid rgb(170, 170, 170);
+    border-radius: 3px;
 }
