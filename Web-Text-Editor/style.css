@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+header{
+    background: linear-gradient(rgba(48, 48, 48, 0.973), rgb(0, 0, 0));
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.logo{
+    margin: 5px auto 5px 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 10px 0;
+    background: linear-gradient(rgba(109, 68, 255, 0.973), rgb(197, 33, 230));
+    transition: all 1s;
+}
+.logo:hover{
+    margin: 5px auto 5px 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 0 50px 0;
+    background: linear-gradient(rgba(201, 18, 18, 0.973), rgb(216, 20, 255));
+    transition: all 1s;
+}
+li, a{
+    font-family:Poppins;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: inline;
+}
+button{
+    border-radius: 20px;
+    padding: 4px 20px;
+    margin-right: 20px;
+    border: transparent;
+    cursor: pointer;
+    background:linear-gradient(rgb(255, 0, 64), rgb(247, 74, 218));
+    transition: all .2s;
+}
+button:hover{
+    border-radius: 20px;
+    padding: 6px 22px;
+    margin-right: 20px;
+    border: transparent;
+    background:linear-gradient(rgb(255, 0, 234), rgb(0, 255, 221));
+    transition: all .2s;
+}
